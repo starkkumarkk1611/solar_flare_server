@@ -9,5 +9,7 @@
 - Clone this Repo in same directory
 - Install requirements
   - pip install -r requirements.txt
+- export Flask App
+  - export Flask_APP=app.py
 - Run Flask app 
   - flask run
