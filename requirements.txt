@@ -1,0 +1,8 @@
+astropy
+Flask
+Flask-Cors
+numpy
+pandas
+matplotlib
+scipy
+Gunicorn
