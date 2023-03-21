@@ -8,10 +8,11 @@ from model.model import convolve_curve
 
 app = Flask(__name__)
 
-CORS(app)
+CORS(app, resources={r'*': {'origins': '*'}})
+
 
 @app.route("/", methods=['GET', 'POST'])
-@cross_origin()
+@cross_origin(origins=['https://solarbrustdetection.netlify.app/', "http://localhost:3000", "http://127.0.0.1:3000"])
 def members():
     if (request.method == 'GET'):
         return """
